@@ -27,7 +27,7 @@ GiveMeSomeCredit-project/
 - **XGBoost, CatBoost** для ансамблевых моделей
 - **Imbalanced-learn (SMOTE)** для балансировки классов
 - **Matplotlib, Seaborn** для визуализации
-- **Scipy** - для проверки гипотез
+- **Scipy** для проверки гипотез
 
 ## Результаты модели
 
@@ -57,11 +57,11 @@ pip install -r requirements.txt
 
 Модель учитывает важность различных признаков для улучшения точности предсказаний:
 
-- **Доход (MonthlyIncome)**
-- **Возраст (age)**
-- **Коэффициент долга (DebtRatio)**
-- **Количество иждивенцев (NumberOfDependents)**
-- **Использование кредитных линий (RevolvingUtilizationOfUnsecuredLines)**
+- **DebtRatio**
+- **NumberOfOpenCreditLinesAndLoans**
+- **NumberRealEstateLoansOrLines**
+- **MonthlyIncome**
+- **NumberOfTime30-59DaysPastDueNotWorse**
 
 ## Деплой и интеграция
 
