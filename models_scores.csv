@@ -1,0 +1,27 @@
+,Model,Best Params,Accuracy,F1 Score,ROC-AUC
+0,Logistic Regression,"{'classifier__C': 0.001, 'classifier__penalty': 'l2'}",0.7726666666666666,0.2834629123765497,0.8029856596230446
+1,Random Forest,"{'classifier__class_weight': None, 'classifier__max_depth': 12, 'classifier__n_estimators': 200}",0.9371333333333334,0.2551342812006319,0.8686587157753055
+2,XGBoost,"{'classifier__learning_rate': 0.1, 'classifier__max_depth': 6, 'classifier__n_estimators': 100, 'classifier__scale_pos_weight': 1}",0.9373666666666668,0.2928114414753481,0.8673997627827199
+3,CatBoost,"{'classifier__depth': 10, 'classifier__iterations': 100, 'classifier__learning_rate': 0.1, 'classifier__scale_pos_weight': 1}",0.9380666666666668,0.2924600152322925,0.8693715790894259
+4,catboost+smote,"{'iterations': 100, 'learning_rate': 0.1, 'depth': 10, 'scale_pos_weight': 1}",0.9085666666666666,0.426989763944015,0.8595631211309109
+5,Stacking_model,"{'cv': 5, 'estimators': [('xgb', XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.1, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=6, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=100, n_jobs=None,
+              num_parallel_tree=None, random_state=None, ...)), ('cat', <catboost.core.CatBoostClassifier object at 0x000002755D9C9450>)], 'final_estimator__C': 1.0, 'final_estimator__class_weight': None, 'final_estimator__dual': False, 'final_estimator__fit_intercept': True, 'final_estimator__intercept_scaling': 1, 'final_estimator__l1_ratio': None, 'final_estimator__max_iter': 100, 'final_estimator__multi_class': 'deprecated', 'final_estimator__n_jobs': None, 'final_estimator__penalty': 'l2', 'final_estimator__random_state': None, 'final_estimator__solver': 'lbfgs', 'final_estimator__tol': 0.0001, 'final_estimator__verbose': 0, 'final_estimator__warm_start': False, 'final_estimator': LogisticRegression(), 'n_jobs': None, 'passthrough': False, 'stack_method': 'auto', 'verbose': 0, 'xgb': XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.1, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=6, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=100, n_jobs=None,
+              num_parallel_tree=None, random_state=None, ...), 'cat': <catboost.core.CatBoostClassifier object at 0x000002755D9C9450>, 'xgb__objective': 'binary:logistic', 'xgb__base_score': None, 'xgb__booster': None, 'xgb__callbacks': None, 'xgb__colsample_bylevel': None, 'xgb__colsample_bynode': None, 'xgb__colsample_bytree': None, 'xgb__device': None, 'xgb__early_stopping_rounds': None, 'xgb__enable_categorical': False, 'xgb__eval_metric': None, 'xgb__feature_types': None, 'xgb__gamma': None, 'xgb__grow_policy': None, 'xgb__importance_type': None, 'xgb__interaction_constraints': None, 'xgb__learning_rate': 0.1, 'xgb__max_bin': None, 'xgb__max_cat_threshold': None, 'xgb__max_cat_to_onehot': None, 'xgb__max_delta_step': None, 'xgb__max_depth': 6, 'xgb__max_leaves': None, 'xgb__min_child_weight': None, 'xgb__missing': nan, 'xgb__monotone_constraints': None, 'xgb__multi_strategy': None, 'xgb__n_estimators': 100, 'xgb__n_jobs': None, 'xgb__num_parallel_tree': None, 'xgb__random_state': None, 'xgb__reg_alpha': None, 'xgb__reg_lambda': None, 'xgb__sampling_method': None, 'xgb__scale_pos_weight': 1, 'xgb__subsample': None, 'xgb__tree_method': None, 'xgb__validate_parameters': None, 'xgb__verbosity': None, 'cat__iterations': 100, 'cat__learning_rate': 0.1, 'cat__depth': 10, 'cat__scale_pos_weight': 1}",0.9382333333333334,0.3346499102333932,0.8699158337412407
